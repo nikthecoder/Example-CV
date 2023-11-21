@@ -1,0 +1,71 @@
+* {
+    background-color: aliceblue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 200%;
+}
+
+body {
+    border: 5px solid lightblue;
+    padding: 20px;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+    max-width: 100%;
+}
+
+hr {
+    color: dodgerblue;
+    max-width: 100%;
+}
+
+.biography, .content, .introduction, .movies, .awards {
+    max-width: 100%;
+}
+
+address {
+    font-style: normal;
+    max-width: 100%;
+}
+
+.nominee {
+    color: darkcyan;
+}
+
+.winner {
+    color: blue;
+}
+
+@media (min-width: 900px){
+
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+	.biography, .content{
+		display: flex;
+        flex-direction: row;
+        padding: 50px;
+	}
+
+    .biography {
+        align-items: center;
+    }
+
+    .introduction {
+        flex-direction: column;
+        margin: 0px 50px;
+    }
+
+    .movies, .awards {
+        padding: 0px 100px;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 0px 30px;
+    }
+}
